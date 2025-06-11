@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <title>VỊT QUAY TOÀN KÝ |WEBSITE</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="lg-max:sticky top-0 left-0 w-full z-50 bg-[#FFEBC2] border-b-2 border-red-500">
+    <div class="bg-[#fff0cd] w-full h-[200px]">
+
+      <div class="flex justify-between items-center max-w-[1200px] gap-10 h-auto w-auto mx-auto py-2 sm-max:px-5">
+        <!-- Logo -->
+        <img src="./image/logo.png" alt="Logo" class="w-50 md-max:w-35 sm-max:w-32" />
+
+        <!-- Slogan (desktop) -->
+        <div class="hidden md:flex flex-col items-center">
+          <img src="./image/slogan.png" class="w-80 " alt="Slogan" />
+          <p class="italic mt-1 text-gray-700 font-semibold text-xl">
+            "Ăn Là Nhớ, Nhớ Là Ghiền"
+          </p>
+        </div>
+
+        <!-- Contact + Hamburger -->
+        <div class="flex items-center gap-4">
+          <img src="./image/contact-header.png" alt="Liên hệ" class="hidden md:block md:w-72" />
+
+          <!-- Hamburger -->
+          <button id="hamburgerBtn" class="block md:hidden ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#b90000]" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="md-max:hidden relative z-10  navbar max-w-full"
+      style="background-image: url('./public/image/.png'); background-repeat: no-repeat;">
+      <div class="max-w-[1000px] w-full absolute left-1/2 -translate-x-1/2 top-[-2rem]">
+        <ul class=" menu-list flex justify-between px-10 gap-6 items-center py-2 m-auto bg-[#BF0000] rounded-b-xl">
+          <li><a href="#" class="text-yellow-400 font-bold uppercase">Trang chủ</a></li>
+          <li><a href="#" class="text-white font-bold uppercase">Giới thiệu</a></li>
+          <li><a href="#" class="text-white font-bold uppercase">Thực đơn</a></li>
+          <li><a href="#" class="text-white font-bold uppercase">Không gian quán</a></li>
+          <li><a href="#" class="text-white font-bold uppercase">Tin tức</a></li>
+          <li><a href="#" class="text-white font-bold uppercase">Liên hệ</a></li>
+          <li><img src="./image/search.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Collapse Menu (mobile only) -->
+    <nav id="mobileMenu" class="md:hidden fixed top-[120px] left-2 right-2 bg-[#b90000] rounded-md px-4
+  transform origin-top scale-y-0 transition-transform duration-300 ease-in-out z-50">
+      <div class="flex flex-col space-y-2 py-4">
+        <a href="#" class="text-yellow-400 font-bold uppercase">Trang chủ</a>
+        <a href="#" class="text-white font-bold uppercase">Giới thiệu</a>
+        <a href="#" class="text-white font-bold uppercase">Thực đơn</a>
+        <a href="#" class="text-white font-bold uppercase">Không gian quán</a>
+        <a href="#" class="text-white font-bold uppercase">Tin tức</a>
+        <a href="#" class="text-white font-bold uppercase">Liên hệ</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero   -->
+  <section class="w-full" style="background-repeat: no-repeat">
+    <img src="./image/hero.png" alt="" />
+  </section>
+
+  <!-- banner  -->
+  <section class="bg-[#FFEDBD] py-10 relative"
+    style="background-image: url('./image/banner.png'); background-repeat: no-repeat;">
+    <div class="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-6 text-center md:text-left px-4">
+        <img src="./image/gioi_thieu_ve.png" alt="intro" />
+        <img src="./image/vitquaytoanky.png" alt="logo" />
+        <p class="text-gray-700">
+          Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc
+          trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử
+          dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm
+          1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo
+          thành một bản mẫu văn bản.
+        </p>
+        <div class="flex justify-between">
+          <div class="">
+            <button
+              class="bg-gradient-to-r from-[#e40000] to-[#b90000] text-white font-semibold py-2 px-6 rounded-full shadow-md hover:scale-105 transition duration-300">
+              Xem Thêm →
+            </button>
+          </div>
+
+          <div>
+            <img src="./image/banner-4.png" alt="Vịt quay" class="w-48 mx-auto md:mx-0" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="relative w-auto h-[300px]">
+        <!-- Banner-1 -->
+        <img src="./image/banner-1.png" class="relative z-10 object-cover
+              max-w-[250px] sm:max-w-[180px] md:max-w-[320px] lg:max-w-[450px]" />
+
+        <!-- Banner-2 -->
+        <img src="./image/banner-2.png" class="absolute top-[-40px] left-10
+         lg-max:w-[400px] h-[260px] sm-max:w-[340px] object-cover z-0" />
+
+        <!-- Label -->
+        <div class="absolute bottom-[10%] left-44 flex items-center z-20">
+          <div class="w-3 h-3 bg-[#b90000] rounded-full"></div>
+          <div class="w-[120px] h-[2px] bg-orange-500 mx-2"></div>
+          <img src="./image/anlanho.png" alt="anlanho" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- product best -->
+  <section class="w-auto" style="
+        background-image: url('./image/bg-monannoibat.png');
+        background-repeat: no-repeat;
+      ">
+    <div class="max-w-[1000px] m-auto">
+      <div class="py-12 px-6 text-center text-black font-sans">
+        <!-- Header -->
+        <div class="max-w-4xl mx-auto mb-12 text-center">
+          <div class="flex justify-center items-center">
+            <img src="./image/logo-1.png" alt="" />
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-red-700 mb-4">
+            <img src="./image/monannoibat.png" alt="" class="max-w-full m-auto" />
+          </div>
+          <p class="text-gray-800">
+            Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào
+            việc trình bày.
+          </p>
+        </div>
+
+        <!-- 3 Món ăn -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Card món ăn -->
+          <div class="bg-transparent text-center">
+            <img src="./image/duck-1.png" alt="Vịt quay" class="rounded-[25px] mx-auto mb-4" />
+            <div
+              class="inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] px-6 py-2 rounded-full text-white font-bold text-sm mb-2">
+              35.000Đ
+            </div>
+            <div class="font-semibold text-lg text-gray-900">
+              VỊT QUAY NGŨ VỊ
+            </div>
+          </div>
+
+          <div class="bg-transparent text-center">
+            <img src="./image/duck-2.png" alt="Vịt quay" class="rounded-[25px] mx-auto mb-4" />
+            <div
+              class="inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] px-6 py-2 rounded-full text-white font-bold text-sm mb-2">
+              35.000Đ
+            </div>
+            <div class="font-semibold text-lg text-gray-900">
+              VỊT QUAY NGŨ VỊ
+            </div>
+          </div>
+
+          <div class="bg-transparent text-center">
+            <img src="./image/duck-3.png" alt="Vịt quay" class="rounded-[25px] mx-auto mb-4" />
+            <div
+              class="inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] px-6 py-2 rounded-full text-white font-bold text-sm mb-2">
+              35.000Đ
+            </div>
+            <div class="font-semibold text-lg text-gray-900">
+              VỊT QUAY NGŨ VỊ
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- product list-->
+  <div class="min-h-screen bg-[#fff4d1] font-sans px-4 py-10 text-center">
+    <div class="max-w-4xl mx-auto mb-10">
+      <div class="flex items-center justify-center gap-2 font-semibold text-black mb-2">
+        <img src="./image/logo-1.png" alt="Logo" />
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-red-700 mb-4">
+        MENU QUÁN ĂN
+      </h1>
+      <p class="text-gray-700 mb-6 text-sm">
+        Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc
+        trình bày.
+      </p>
+
+      <!-- Menu Tabs -->
+      <div class="flex justify-center gap-4 mb-10 text-sm font-medium">
+        <button class="bg-[#ffa200] text-white px-6 py-2 rounded-full shadow">
+          Vịt Quay
+        </button>
+        <button
+          class="border border-[#ffa200] text-[#ffa200] px-6 py-2 rounded-full hover:bg-[#ffa200] hover:text-white transition">
+          Heo Quay
+        </button>
+        <button
+          class="border border-[#ffa200] text-[#ffa200] px-6 py-2 rounded-full hover:bg-[#ffa200] hover:text-white transition">
+          Bánh Mì
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div class="rounded-[20px]">
+        <img src="./image/duck-1.png" alt="Vịt quay" class="rounded-[20px] w-full h-auto object-cover mb-3" />
+        <div
+          class="bg-gradient-to-r from-[#b80000] to-[#f94200] text-white font-bold text-sm px-4 py-1 rounded-full inline-block mb-1 shadow">
+          35.000Đ
+        </div>
+        <h3 class="text-base font-semibold text-gray-800">VỊT QUAY NGŨ VỊ</h3>
+      </div>
+      <div class="rounded-[20px]">
+        <img src="./image/duck-2.png" alt="Vịt quay" class="rounded-[20px] w-full h-auto object-cover mb-3" />
+        <div
+          class="bg-gradient-to-r from-[#b80000] to-[#f94200] text-white font-bold text-sm px-4 py-1 rounded-full inline-block mb-1 shadow">
+          35.000Đ
+        </div>
+        <h3 class="text-base font-semibold text-gray-800">VỊT QUAY NGŨ VỊ</h3>
+      </div>
+      <div class="rounded-[20px]">
+        <img src="./image/duck-3.png" alt="Vịt quay" class="rounded-[20px] w-full h-auto object-cover mb-3" />
+        <div
+          class="bg-gradient-to-r from-[#b80000] to-[#f94200] text-white font-bold text-sm px-4 py-1 rounded-full inline-block mb-1 shadow">
+          35.000Đ
+        </div>
+        <h3 class="text-base font-semibold text-gray-800">VỊT QUAY NGŨ VỊ</h3>
+      </div>
+      <div class="rounded-[20px]">
+        <img src="./image/duck-1.png" alt="Vịt quay" class="rounded-[20px] w-full h-auto object-cover mb-3" />
+        <div
+          class="bg-gradient-to-r from-[#b80000] to-[#f94200] text-white font-bold text-sm px-4 py-1 rounded-full inline-block mb-1 shadow">
+          35.000Đ
+        </div>
+        <h3 class="text-base font-semibold text-gray-800">VỊT QUAY NGŨ VỊ</h3>
+      </div>
+
+      <!-- Hang 2 -->
+      <div class="rounded-[20px]">
+        <img src="./image/duck-1.png" alt="Vịt quay" class="rounded-[20px] w-full h-auto object-cover mb-3" />
+        <div
+          class="bg-gradient-to-r from-[#b80000] to-[#f94200] text-white font-bold text-sm px-4 py-1 rounded-full inline-block mb-1 shadow">
+          35.000Đ
+        </div>
+        <h3 class="text-base font-semibold text-gray-800">VỊT QUAY NGŨ VỊ</h3>
+      </div>
+      <div class="rounded-[20px]">
+        <img src="./image/duck-2.png" alt="Vịt quay" class="rounded-[20px] w-full h-auto object-cover mb-3" />
+        <div
+          class="bg-gradient-to-r from-[#b80000] to-[#f94200] text-white font-bold text-sm px-4 py-1 rounded-full inline-block mb-1 shadow">
+          35.000Đ
+        </div>
+        <h3 class="text-base font-semibold text-gray-800">VỊT QUAY NGŨ VỊ</h3>
+      </div>
+      <div class="rounded-[20px]">
+        <img src="./image/duck-3.png" alt="Vịt quay" class="rounded-[20px] w-full h-auto object-cover mb-3" />
+        <div
+          class="bg-gradient-to-r from-[#b80000] to-[#f94200] text-white font-bold text-sm px-4 py-1 rounded-full inline-block mb-1 shadow">
+          35.000Đ
+        </div>
+        <h3 class="text-base font-semibold text-gray-800">VỊT QUAY NGŨ VỊ</h3>
+      </div>
+      <div class="rounded-[20px]">
+        <img src="./image/duck-1.png" alt="Vịt quay" class="rounded-[20px] w-full h-auto object-cover mb-3" />
+        <div
+          class="bg-gradient-to-r from-[#b80000] to-[#f94200] text-white font-bold text-sm px-4 py-1 rounded-full inline-block mb-1 shadow">
+          35.000Đ
+        </div>
+        <h3 class="text-base font-semibold text-gray-800">VỊT QUAY NGŨ VỊ</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- sale product -->
+  <section class="bg-yellow-300 flex flex-col items-center">
+    <div class="grid grid-cols-1 gap-4 max-w-4xl">
+      <div>
+        <h1 class="text-4xl font-bold text-red-600">HÌNH ẢNH</h1>
+      </div>
+      <div>
+        <img src="./image/image-1.png" alt="Image 1" class="w-full h-full object-cover" />
+      </div>
+      <div>
+        <img src="./image/image-2.png" alt="Image 2" class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center space-x-4 mt-4">
+      <a href="#" class="text-black"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-black"><i class="fab fa-tiktok"></i></a>
+      <a href="#" class="text-black"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p class="mt-2 text-black">@kazama</p>
+    <a href="#" class="text-red-600 mt-2">Xem thêm</a>
+  </section>
+
+  <!-- new & event  -->
+  <section class="bg-white">
+    <div
+      class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 border-t border-gray-200 sm:mt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div class="flex max-w-xl flex-col items-start justify-between">
+        <div class="group relative">
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+            Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam
+            vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+            exercitationem placeat consectetur nulla deserunt vel. Iusto
+            corrupti dicta.
+          </p>
+        </div>
+      </div>
+      <div class="flex max-w-xl flex-col items-start justify-between">
+        <div class="group relative">
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+            Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam
+            vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+            exercitationem placeat consectetur nulla deserunt vel. Iusto
+            corrupti dicta.
+          </p>
+        </div>
+      </div>
+      <div class="flex max-w-xl flex-col items-start justify-between">
+        <div class="group relative">
+          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+            Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam
+            vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+            exercitationem placeat consectetur nulla deserunt vel. Iusto
+            corrupti dicta.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer  -->
+</body>
+<script>
+  const btn = document.getElementById("hamburgerBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("scale-y-100");
+    menu.classList.toggle("scale-y-0");
+  });
+</script>
+
+</html>
