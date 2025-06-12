@@ -16,8 +16,8 @@
 
 <body>
   <!-- header -->
-  <header class="lg-max:sticky top-0 left-0 w-full z-50 bg-[#FFEBC2] border-b-2 border-red-500">
-    <div class="bg-[#fff0cd] w-full h-[200px]">
+  <header class="md-max:sticky top-0 left-0 w-full z-50 bg-[#FFEBC2] border-b-2 border-red-500 py-3">
+    <div class="bg-[#fff0cd] w-full h-[200px] md-max:h-[100px]">
 
       <div class="flex justify-between items-center max-w-[1200px] gap-10 h-auto w-auto mx-auto py-2 sm-max:px-5">
         <!-- Logo -->
@@ -76,12 +76,12 @@
   </header>
 
   <!-- hero   -->
-  <section class="w-full" style="background-repeat: no-repeat">
-    <img src="./image/hero.png" alt="" />
+  <section class="w-full h-auto overflow-hidden max-[639px]:h-[300px]">
+    <img src="./image/hero.png" alt="Hero" class="w-full h-[400px] object-cover max-[639px]:h-[300px]" />
   </section>
 
   <!-- banner  -->
-  <section class="bg-[#FFEDBD] py-10 relative"
+  <section class="bg-[#FFEDBD] py-10 relative overflow-hidden"
     style="background-image: url('./image/banner.png'); background-repeat: no-repeat;">
     <div class="max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div class="space-y-6 text-center md:text-left px-4">
@@ -94,16 +94,17 @@
           1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo
           thành một bản mẫu văn bản.
         </p>
-        <div class="flex justify-between">
+        <div class="flex justify-between pb-10 items-center">
           <div class="">
-            <button
-              class="bg-gradient-to-r from-[#e40000] to-[#b90000] text-white font-semibold py-2 px-6 rounded-full shadow-md hover:scale-105 transition duration-300">
+            <button class="bg-gradient-to-r from-[#e40000] to-[#b90000]
+               text-white font-semibold py-2 px-6 rounded-full shadow-md
+                hover:scale-105 transition duration-300">
               Xem Thêm →
             </button>
           </div>
 
           <div>
-            <img src="./image/banner-4.png" alt="Vịt quay" class="w-48 mx-auto md:mx-0" />
+            <img src="./image/banner-4.png" alt="Vịt quay" class="w-48 sm-max:w-36 mx-auto md:mx-0" />
           </div>
         </div>
       </div>
@@ -111,12 +112,12 @@
       <!-- Banner -->
       <div class="relative w-auto h-[300px]">
         <!-- Banner-1 -->
-        <img src="./image/banner-1.png" class="relative z-10 object-cover
-              max-w-[250px] sm:max-w-[180px] md:max-w-[320px] lg:max-w-[450px]" />
+        <img src="./image/banner-1.png" class="relative z-10 object-cover h-auto
+              max-w-[250px] sm:max-w-[180px] md:max-w-[260px] md-max:top-10 md-max:-left-10 lg:max-w-[450px]" />
 
         <!-- Banner-2 -->
         <img src="./image/banner-2.png" class="absolute top-[-40px] left-10
-         lg-max:w-[400px] h-[260px] sm-max:w-[340px] object-cover z-0" />
+         h-auto lg-max:w-[500px] max-h-[260px] md-max:w-[300px] sm-max:w-[340px] object-cover z-0" />
 
         <!-- Label -->
         <div class="absolute bottom-[10%] left-44 flex items-center z-20">
@@ -129,8 +130,9 @@
   </section>
 
   <!-- product best -->
-  <section class="w-auto" style="
+  <section class="w-full" style="
         background-image: url('./image/bg-monannoibat.png');
+        background-size: cover;
         background-repeat: no-repeat;
       ">
     <div class="max-w-[1000px] m-auto">
@@ -152,35 +154,33 @@
         <!-- 3 Món ăn -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <!-- Card món ăn -->
-          <div class="bg-transparent text-center">
+          <div class="relative bg-transparent text-center">
             <img src="./image/duck-1.png" alt="Vịt quay" class="rounded-[25px] mx-auto mb-4" />
-            <div
-              class="inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] px-6 py-2 rounded-full text-white font-bold text-sm mb-2">
+            <div class="absolute lg-max:bottom-16 md-max:bottom-14 sm-max:bottom-12 -translate-x-1/2 inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] 
+              px-9 py-2 rounded-full text-white font-bold text-xl ">
               35.000Đ
             </div>
-            <div class="font-semibold text-lg text-gray-900">
+            <div class="font-semibold text-2xl text-gray-900 pt-14">
               VỊT QUAY NGŨ VỊ
             </div>
           </div>
-
-          <div class="bg-transparent text-center">
+          <div class="relative bg-transparent text-center">
             <img src="./image/duck-2.png" alt="Vịt quay" class="rounded-[25px] mx-auto mb-4" />
-            <div
-              class="inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] px-6 py-2 rounded-full text-white font-bold text-sm mb-2">
+            <div class="absolute lg-max:bottom-16 md-max:bottom-14 sm-max:bottom-12 -translate-x-1/2 inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] 
+              px-9 py-2 rounded-full text-white font-bold text-xl ">
               35.000Đ
             </div>
-            <div class="font-semibold text-lg text-gray-900">
+            <div class="font-semibold text-2xl text-gray-900 pt-14">
               VỊT QUAY NGŨ VỊ
             </div>
           </div>
-
-          <div class="bg-transparent text-center">
+          <div class="relative bg-transparent text-center">
             <img src="./image/duck-3.png" alt="Vịt quay" class="rounded-[25px] mx-auto mb-4" />
-            <div
-              class="inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] px-6 py-2 rounded-full text-white font-bold text-sm mb-2">
+            <div class="absolute lg-max:bottom-16 md-max:bottom-14 sm-max:bottom-12 -translate-x-1/2 inline-block bg-gradient-to-r from-[#a00000] to-[#d40000] 
+              px-9 py-2 rounded-full text-white font-bold text-xl ">
               35.000Đ
             </div>
-            <div class="font-semibold text-lg text-gray-900">
+            <div class="font-semibold text-2xl text-gray-900 pt-14">
               VỊT QUAY NGŨ VỊ
             </div>
           </div>
@@ -190,7 +190,7 @@
   </section>
 
   <!-- product list-->
-  <div class="min-h-screen bg-[#fff4d1] font-sans px-4 py-10 text-center">
+  <div class="bg-[#fff4d1] font-sans px-4 py-10 text-center">
     <div class="max-w-4xl mx-auto mb-10">
       <div class="flex items-center justify-center gap-2 font-semibold text-black mb-2">
         <img src="./image/logo-1.png" alt="Logo" />
@@ -290,68 +290,266 @@
     </div>
   </div>
 
+  <!-- image product -->
+  <section class="h-auto w-full mx-auto px-4 py-10"
+    style="background-image: url('./image/bg_image.png'); background-repeat: no-repeat; background-size: cover;">
+    <div class="max-w-6xl mx-auto flex justify-between items-center mt-8 px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cột 1 -->
+        <div class="flex flex-col space-y-4">
+          <img src="./image/Hình ảnh.png" alt=""
+            class="w-full max-w-xs md:max-w-full sm-max:max-w-full object-contain mx-auto md:mx-0 size-16 " />
+          <img src="./image/image-1.png" alt="" class=" w-full object-cover max-h-[300px] " />
+          <img src="./image/image-2.png" alt="" class=" w-full object-cover max-h-[200px] pl-12 sm-max:pl-0" />
+          <a href="#"
+            class="more sm-max:!hidden -mr-6  md:text-right flex justify-end items-center text-red-700 font-semibold underline">
+            <p class="text-xl block w-fit pr-3">Xem thêm</p>
+            <span class="dot w-3 h-3 bg-red-700 rounded-full "></span>
+            <span class="line h-[3px] w-[120px] bg-red-700"></span>
+          </a>
+        </div>
+        <!-- Cột 2 -->
+        <div class="flex flex-col space-y-4">
+          <img src="./image/image-3.png" class="" />
+          <img src="./image/image-4.png" class="h-[400px]" />
+        </div>
+        <!-- Cột 3 -->
+        <div class="flex flex-col justify-center items-center gap-10 h-full mt-4">
+          <!-- Phần ảnh -->
+          <div class="space-y-4 md-max:flex sm-max:flex-col gap-x-6">
+            <img src="./image/image-5.png" class="md-max:w-full sm-max:w-full" />
+            <img src="./image/image-6.png" class="md-max:w-full max-h-full sm-max:w-full" />
+          </div>
+
+          <!-- Phần icon mạng xã hội -->
+          <div class="mt-0 -ml-10 md-max:ml-80 sm-max:ml-0 sm-max:w-full">
+            <div
+              class="flex justify-between px-8 min-w-[250px] border-y-2 border-[#ff363684] py-2 sm-max:justify-center sm-max:gap-6">
+              <i class="fab fa-facebook-square text-3xl"></i>
+              <i class="fab fa-tiktok text-3xl"></i>
+              <i class="fab fa-shopify text-3xl"></i>
+              <i class="fas fa-comments text-3xl"></i>
+            </div>
+            <img src="./image/kazama.png" class="mx-auto py-3" alt="">
+          </div>
+        </div>
+      </div>
+  </section>
+
   <!-- sale product -->
-  <section class="bg-yellow-300 flex flex-col items-center">
-    <div class="grid grid-cols-1 gap-4 max-w-4xl">
-      <div>
-        <h1 class="text-4xl font-bold text-red-600">HÌNH ẢNH</h1>
-      </div>
-      <div>
-        <img src="./image/image-1.png" alt="Image 1" class="w-full h-full object-cover" />
-      </div>
-      <div>
-        <img src="./image/image-2.png" alt="Image 2" class="w-full h-full object-cover" />
+  <section class="overflow-hidden  sale-background relative grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-10 text-white"
+    style="background-image: url('image/bg_sale.png'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Background Decor -->
+    <div class="sub_background absolute left-1/3 z-10">
+      <img src="image/decor.png" alt="">
+    </div>
+
+    <!-- Cột 1 -->
+    <div
+      class="flex flex-col justify-center items-end md:items-end sm:items-center space-y-4 text-right sm:text-center">
+      <img src="image/vitquayheoquay.png" alt="">
+      <img src="image/toanky.png" alt="">
+      <img src="image/tinhhoaamthuc.png" alt="">
+
+      <div class="flex gap-4 pt-2 justify-end sm:justify-center">
+        <img src="./image/be.png" alt="beFood" class="h-14">
+        <img src="./image/grap.png" alt="GrabFood" class="h-14">
+        <img src="./image/shoppe.png" alt="ShopeeFood" class="h-14">
       </div>
     </div>
 
-    <div class="flex justify-center items-center space-x-4 mt-4">
-      <a href="#" class="text-black"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="text-black"><i class="fab fa-tiktok"></i></a>
-      <a href="#" class="text-black"><i class="fas fa-shopping-cart"></i></a>
-      <a href="#" class="text-black"><i class="fab fa-instagram"></i></a>
+    <!-- Cột 2 -->
+    <div class="flex justify-center items-center">
+      <img src="./image/duck-sale.png" alt="Vịt quay" class="max-h-[400px] object-contain">
     </div>
-    <p class="mt-2 text-black">@kazama</p>
-    <a href="#" class="text-red-600 mt-2">Xem thêm</a>
+
+    <!-- Cột 3 -->
+    <div
+      class="space-y-4 flex flex-col justify-center items-start sm:items-center md:items-start text-right sm:text-center md:text-right">
+      <div class="flex justify-end gap-3 sm:justify-center md:justify-end">
+        <div class="bg-white rounded-full h-8 w-8 flex items-center justify-center">
+          <img src="image/fb_sale.png" alt="Facebook" class="h-4 w-4 object-contain" />
+        </div>
+        <div class="bg-white rounded-full h-8 w-8 flex items-center justify-center">
+          <img src="image/zalo-sale.png" alt="Zalo" class="h-5 w-5 object-contain" />
+        </div>
+        <div class="bg-white rounded-full h-8 w-8 flex items-center justify-center">
+          <img src="image/tiktok-sale.png" alt="TikTok" class="h-5 w-5 object-contain" />
+        </div>
+        <div class="bg-white rounded-full h-8 w-8 flex items-center justify-center">
+          <img src="image/tiktok-sale.png" alt="TikTok" class="h-5 w-5 object-contain" />
+        </div>
+      </div>
+
+      <div class="relative text-white leading-tight w-full px-2 md:px-0 
+      sm:px-auto">
+        <p class="absolute text-xl sm:text-4xl font-medium tracking-wide top-1 
+        left-0 sm:left-4 mt-5 sm-max:text-3xl sm-max:left-7">GIẢM
+        </p>
+        <span class="absolute left-[30%] sm-max:right-4 top-4 text-5xl 
+        font-bold mt-5 -ml-5 sm-max:text-5xl sm-max:pr-5 ">ĐẾN</span>
+        <div class="flex items-baseline justify-center md:justify-start gap-1 sm:gap-2 pt-12
+        ">
+          <div class="text-[80px] sm:text-[120px] font-bold text-yellow-400 drop-shadow-[3px_3px_0_rgba(0,0,0,0.3)]">10
+          </div>
+          <div class="text-[60px] sm:text-[100px] font-bold text-yellow-400 drop-shadow-[3px_3px_0_rgba(0,0,0,0.3)]">%
+          </div>
+        </div>
+      </div>
+
+      <div class="border-y border-yellow-400 w-full max-w-[300px] py-2 flex items-center justify-center gap-2 
+      sm:gap-4 sm-max:mx-auto sm-max:items-center">
+        <img src="image/phone.png" alt="phone" class="w-4 h-4 sm:w-5 sm:h-5 object-contain" />
+        <p class="text-sm sm-max:text-base  text-white">
+          Hotline: <span class="text-yellow-400 font-semibold text-base sm:text-lg">0907399187</span>
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- new & event  -->
-  <section class="bg-white">
-    <div
-      class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 border-t border-gray-200 sm:mt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      <div class="flex max-w-xl flex-col items-start justify-between">
-        <div class="group relative">
-          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-            Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam
-            vitae illo. Non aliquid explicabo necessitatibus unde. Sed
-            exercitationem placeat consectetur nulla deserunt vel. Iusto
-            corrupti dicta.
+  <section class="relative bg-[#FDECC8] overflow-hidden">
+    <!-- Lá cây trái/phải
+    <img src="leaf-left.png" class="absolute left-0 top-1/2 -translate-y-1/2 w-20" />
+    <img src="leaf-right.png" class="absolute right-0 bottom-10 w-20" /> -->
+
+    <!-- Header -->
+    <div class="text-center py-10 px-4">
+      <img src="image/logo-1.png" alt="Logo" class="mx-auto mb-2 h-8" />
+      <img src="image/tintucsukien.png" class="m-auto" alt="">
+      <p class="text-gray-600 mt-1 max-w-full pb-3 mx-auto text-sm md:text-base">
+        Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày.
+      </p>
+    </div>
+
+    <!-- Card grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6 m-auto md:px-20 
+    pb-16 max-w-[1400px] sm-max:w-auto">
+      <!-- Card -->
+      <div class="relative group">
+        <img src="image/duck-infor-1.png" class="rounded-md " />
+        <img src="image/mask.png" class="absolute -top-1 left-5" />
+
+        <div class="absolute -bottom-1 right-1/3 translate-x-1/2 w-[60%] p-4 
+        rounded-md shadow bg-white group-hover:bg-red-700 
+      text-black group-hover:text-white transition">
+
+          <p class="text-sm">
+            Tiêu đề tin tức & sự kiện mãi về các loại vịt quay.
           </p>
+          <a href="#" class="text-red-600 group-hover:text-white text-sm mt-1 inline-block">Xem chi tiết</a>
         </div>
       </div>
-      <div class="flex max-w-xl flex-col items-start justify-between">
-        <div class="group relative">
-          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-            Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam
-            vitae illo. Non aliquid explicabo necessitatibus unde. Sed
-            exercitationem placeat consectetur nulla deserunt vel. Iusto
-            corrupti dicta.
+
+      <div class="relative group mt-5">
+        <img src="image/duck-infor-1.png" class="rounded-md  " />
+        <img src="image/mask.png" class="absolute -top-1 left-5" />
+
+        <div class="absolute -bottom-10 right-1/3 translate-x-1/2 w-[60%] p-4 
+        rounded-md shadow bg-white group-hover:bg-red-700
+      text-black group-hover:text-white transition">
+
+          <p class="text-sm">
+            Tiêu đề tin tức & sự kiện mãi về các loại vịt quay.
           </p>
+          <a href="#" class="text-red-600 group-hover:text-white text-sm mt-1 inline-block">Xem chi tiết</a>
         </div>
       </div>
-      <div class="flex max-w-xl flex-col items-start justify-between">
-        <div class="group relative">
-          <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-            Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam
-            vitae illo. Non aliquid explicabo necessitatibus unde. Sed
-            exercitationem placeat consectetur nulla deserunt vel. Iusto
-            corrupti dicta.
+
+      <div class="relative group md-max:mt-5">
+        <img src="image/duck-infor-1.png" class="rounded-md " />
+        <img src="image/mask.png" class="absolute -top-1 left-5" />
+
+        <div class="absolute -bottom-1 right-1/3 translate-x-1/2  w-[60%] p-4 
+        rounded-md shadow bg-white group-hover:bg-red-700 
+      text-black group-hover:text-white transition">
+
+          <p class="text-sm">
+            Tiêu đề tin tức & sự kiện mãi về các loại vịt quay.
           </p>
+          <a href="#" class="text-red-600 group-hover:text-white text-sm mt-1 inline-block">Xem chi tiết</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- footer  -->
+  <footer class="bg-[#FDECC8] w-full"
+    style="background-image: url('image/bg-monannoibat.png'); background-repeat: no-repeat; background-size: cover;">
+    <!-- Thông tin, Chính sách, Fanpage -->
+    <div class="max-w-[1200px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-800">
+      <!-- Cột 1: Thông tin -->
+      <div>
+        <h3 class="font-bold mb-4 border-b-2 border-red-600 inline-block">THÔNG TIN</h3>
+        <ul class="space-y-2 mt-4 text-sm">
+          <li class="flex items-start gap-2">
+            <i class="fas fa-map-marker-alt mt-1"></i>
+            Địa chỉ: 352 Phạm Văn Chiêu, Phường 9, Quận Gò Vấp, Thành Phố Hồ Chí Minh, Việt Nam
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-phone-alt"></i>
+            Hotline: 0907399187
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-envelope"></i>
+            Email: vitquaytoanky@gmail.com
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-globe"></i>
+            Website: http://companyname.abc
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-clock"></i>
+            Giờ mở cửa: 6:00 – 20:30 (Thứ 2 – Chủ Nhật)
+          </li>
+        </ul>
+      </div>
+      <!-- Cột 2: Chính sách -->
+      <div>
+        <h3 class="font-bold mb-4 border-b-2 border-red-600 inline-block">CHÍNH SÁCH</h3>
+        <ul class="list-disc list-inside space-y-2 mt-4 text-sm">
+          <li>Chính sách mua bán thời trang</li>
+          <li>Chính sách bảo mật thông tin</li>
+          <li>Chính sách thanh toán</li>
+          <li>Chính sách giao hàng toàn quốc</li>
+          <li>Chính sách giảm giá</li>
+        </ul>
+      </div>
+
+      <!-- Cột 3: Fanpage Facebook -->
+      <div>
+        <h3 class="font-bold mb-4 border-b-2 border-red-600 inline-block">FANPAGE – FACEBOOK</h3>
+        <!-- Thay URL của bạn vào data-href -->
+        <div class="mt-4">
+          <div class="fb-page" data-href="" data-tabs="timeline" data-width="" data-height="" data-small-header="false"
+            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <img src="image/fanpage.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bar Copyright & Social -->
+    <div class="bg-red-600 text-white">
+      <div class="max-w-[1200px] mx-auto px-6 py-4 flex flex-col md:flex-row justify-between
+        items-center gap-4 text-sm">
+        <p>© Copyright VỊT QUAY TOÀN KÝ . All rights reserved. Designed by NINA</p>
+        <div class="flex gap-4 text-xl pr-8">
+          <a href="#" class="hover:text-gray-200"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-gray-200"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="hover:text-gray-200"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-gray-200"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bản đồ Google Map -->
+    <div class="map w-full h-auto">
+      <img src="image/map.png"  alt="map">
+    </div>
+  </footer>
 </body>
 <script>
   const btn = document.getElementById("hamburgerBtn");
